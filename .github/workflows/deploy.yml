@@ -55,16 +55,16 @@ jobs:
                   "url": "${{ steps.deployment.outputs.page_url }}",
                   "color": 5814783,
                   "fields": [
-                    {
-                      "name": "Branche",
-                      "value": "main",
-                      "inline": true
-                    },
-                    {
-                      "name": "Commit",
-                      "value": "${{ github.sha }}",
-                      "inline": true
-                    }
+                    {"name": "Auteur", "value": "${{ github.actor }}", "inline": true},
+                    {"name": "Lien", "value": "${{ steps.deployment.outputs.page_url }}", "inline": true},
+                    {"name": "Commit", "value": "${{ github.sha }}", "inline": true},
+                    {"name": "Branche", "value": "${{ github.ref_name }}", "inline": true},
+                    {"name": "Repository", "value": "${{ github.repository }}", "inline": true},
+                    {"name": "Workflow", "value": "${{ github.workflow }}", "inline": true},
+                    {"name": "Run ID", "value": "${{ github.run_id }}", "inline": true},
+                    {"name": "Run Number", "value": "${{ github.run_number }}", "inline": true},
+                    {"name": "Event", "value": "${{ github.event_name }}", "inline": true},
+                    {"name": "URL du run", "value": "${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}", "inline": true}
                   ]
                 }]
               }' \
