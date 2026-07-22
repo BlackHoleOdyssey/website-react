@@ -42,3 +42,31 @@ jobs:
       - name: Déployer sur GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+        
+      - name: Notify Discord
+        env:
+            DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+        run: |
+            curl -H "Content-Type: application/json" \
+              -d '{
+                "embeds": [{
+                  "title": "Déploiement GitHub Pages réussi",
+                  "description": "Le site a été déployé avec succès sur GitHub Pages.",
+                  "url": "${{ steps.deployment.outputs.page_url }}",
+                  "color": 5814783,
+                  "fields": [
+                    {
+                      "name": "Branche",
+                      "value": "main",
+                      "inline": true
+                    },
+                    {
+                      "name": "Commit",
+                      "value": "${{ github.sha }}",
+                      "inline": true
+                    }
+                  ]
+                }]
+              }' \
+              "$DISCORD_WEBHOOK_URL"
+
