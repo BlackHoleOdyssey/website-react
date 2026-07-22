@@ -6,14 +6,14 @@ import NeonGlow from "../neonblade-ui/neon-glow";
 
 function NavBar() {
     const [isScrolled, setIsScrolled] = useState(false);
-    
+
     useEffect(() => {
         const handleScroll = () => {
             setIsScrolled(window.scrollY > 50);
         };
-        
+
         window.addEventListener('scroll', handleScroll);
-        
+
         return () => {
             window.removeEventListener('scroll', handleScroll);
         };
@@ -22,13 +22,13 @@ function NavBar() {
     return (
         <header className={isScrolled ? 'navbar navbar-scrolled' : 'navbar'}>
             <NeonGlow
-            colors="#ffffff"
-            glowIntensity={"subtle"}
-            className="title"
+                colors="#ffffff"
+                glowIntensity={"subtle"}
+                className="title"
             >
-            <h1>
-                Black Hole Odyssey
-            </h1>
+                <h1>
+                    Black Hole Odyssey
+                </h1>
             </NeonGlow>
             <nav className="nav-links">
                 <NavLink to="/" end>
@@ -43,7 +43,7 @@ function NavBar() {
                 <NavLink to="/about">
                     About
                 </NavLink>
-                <NavLink to="/contact">
+                <NavLink to="/contact" id="contact-link">
                     Contact
                 </NavLink>
             </nav>
