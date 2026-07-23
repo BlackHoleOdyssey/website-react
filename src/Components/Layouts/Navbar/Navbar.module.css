@@ -8,7 +8,7 @@
     padding: 0 45px 0 30px;
 
     position: fixed;
-    top: 0;
+    top: 10px;
     left: 0;
     transform: translateX(0);
     border-radius: 0;
@@ -17,7 +17,7 @@
     transition: all 0.3s ease;
 }
 
-.navbar.navbar-scrolled {
+.navbarScrolled {
     top: 20px;
     left: 50%;
     transform: translateX(-50%);
@@ -27,29 +27,24 @@
     inset 0 0 15px rgba(255, 255, 255, 0.3);
 }
 
-.nav-links {
+.navLinks {
     display: flex;
     gap: 30px;
 }
 
-.nav-links a,
-.nav-links a:visited {
+.navLinks a,
+.navLinks a:visited {
     color: #585c5c;
     text-decoration: none;
     margin: 0
 }
 
-.nav-links a.active,
-.nav-links a:hover {
+.navLinks a.active,
+.navLinks a:hover {
     color: white;
-}
-
-#contact-link {
-    margin-left: 20px;
 }
 
 .title {
     margin: 15px;
-    color: white;
     font-size: 24px;
 }
