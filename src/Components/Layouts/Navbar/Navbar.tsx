@@ -1,0 +1,53 @@
+﻿import {useState, useEffect} from 'react';
+import {NavLink} from 'react-router-dom';
+import styles from './Navbar.module.css';
+import commonStyles from '../../common.module.css';
+import NeonGlow from "../../neonblade-ui/neon-glow";
+
+function NavBar() {
+    const [isScrolled, setIsScrolled] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            setIsScrolled(window.scrollY > 50);
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
+    return (
+        <header className={isScrolled ? styles.navbar + ' ' + styles.navbarScrolled : styles.navbar}>
+            <NeonGlow
+                colors="#ffffff"
+                glowIntensity={"subtle"}
+                className={styles.title}
+            >
+                <h1>
+                    Black Hole Odyssey
+                </h1>
+            </NeonGlow>
+            <nav className={styles.navLinks}>
+                <NavLink to="/" end className={({ isActive }) => isActive ? `${commonStyles.navLink} ${commonStyles.navLinkActive}` : commonStyles.navLink}>
+                    Home
+                </NavLink>
+                <NavLink to="/games" className={({ isActive }) => isActive ? `${commonStyles.navLink} ${commonStyles.navLinkActive}` : commonStyles.navLink}>
+                    Games
+                </NavLink>
+                <NavLink to="/packages" className={({ isActive }) => isActive ? `${commonStyles.navLink} ${commonStyles.navLinkActive}` : commonStyles.navLink}>
+                    Packages
+                </NavLink>
+                <NavLink to="/about" className={({ isActive }) => isActive ? `${commonStyles.navLink} ${commonStyles.navLinkActive}` : commonStyles.navLink}>                    About
+                </NavLink>
+                <NavLink to="/contact" className={({ isActive }) => isActive ? `${commonStyles.navLink} ${commonStyles.navLinkActive}` : commonStyles.navLink}>
+                    Contact
+                </NavLink>
+            </nav>
+        </header>
+    );
+}
+
+export default NavBar;

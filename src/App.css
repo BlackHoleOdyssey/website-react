@@ -1,6 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
 @import "tailwindcss";
 
-body {
+html, body, #root {
+    height: 100%;
+    margin: 0;
+    
+    background-color: #18191a;
     font-family: 'Electrolize', sans-serif;
+}
+
+.app-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.main-content {
+    flex: 1;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+.navLinks a.active,
+.navLinks a:hover {
+    color: white;
 }
