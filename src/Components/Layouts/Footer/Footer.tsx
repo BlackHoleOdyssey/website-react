@@ -42,6 +42,10 @@ function Footer() {
                                  className={({isActive}) => isActive ? `${commonStyles.navLink} ${commonStyles.navLinkActive}` : commonStyles.navLink}>
                             Contact
                         </NavLink>
+                        <NavLink to="/feedback"
+                                 className={({isActive}) => isActive ? `${commonStyles.navLink} ${commonStyles.navLinkActive}` : commonStyles.navLink}>
+                            Feedback
+                        </NavLink>
                     </div>
                 </div>
 
