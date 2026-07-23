@@ -32,18 +32,6 @@
     gap: 30px;
 }
 
-.navLinks a,
-.navLinks a:visited {
-    color: #585c5c;
-    text-decoration: none;
-    margin: 0
-}
-
-.navLinks a.active,
-.navLinks a:hover {
-    color: white;
-}
-
 .title {
     margin: 15px;
     font-size: 24px;
