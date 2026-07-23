@@ -24,62 +24,66 @@ function Footer() {
                 </div>
 
                 <div className={styles.footerNav}>
-                    <div className={styles.footerExplorer}>
+                    <div className={styles.rowHeader}>
                         <p className={styles.footerHeading}>Explorer</p>
-                        <NavLink to="/games"
-                                 className={({isActive}) => isActive ? `${commonStyles.navLink} ${commonStyles.navLinkActive}` : commonStyles.navLink}>
-                            Games
-                        </NavLink>
-                        <NavLink to="/packages"
-                                 className={({isActive}) => isActive ? `${commonStyles.navLink} ${commonStyles.navLinkActive}` : commonStyles.navLink}>
-                            Packages
-                        </NavLink>
-                        <NavLink to="/about"
-                                 className={({isActive}) => isActive ? `${commonStyles.navLink} ${commonStyles.navLinkActive}` : commonStyles.navLink}>
-                            About
-                        </NavLink>
-                        <NavLink to="/contact"
-                                 className={({isActive}) => isActive ? `${commonStyles.navLink} ${commonStyles.navLinkActive}` : commonStyles.navLink}>
-                            Contact
-                        </NavLink>
-                        <NavLink to="/feedback"
-                                 className={({isActive}) => isActive ? `${commonStyles.navLink} ${commonStyles.navLinkActive}` : commonStyles.navLink}>
-                            Feedback
-                        </NavLink>
+                        <div className={styles.rowGroup}>
+                            <NavLink to="/games"
+                                     className={({isActive}) => isActive ? `${commonStyles.navLink} ${commonStyles.navLinkActive}` : commonStyles.navLink}>
+                                Games
+                            </NavLink>
+                            <NavLink to="/packages"
+                                     className={({isActive}) => isActive ? `${commonStyles.navLink} ${commonStyles.navLinkActive}` : commonStyles.navLink}>
+                                Packages
+                            </NavLink>
+                            <NavLink to="/about"
+                                     className={({isActive}) => isActive ? `${commonStyles.navLink} ${commonStyles.navLinkActive}` : commonStyles.navLink}>
+                                About
+                            </NavLink>
+                            <NavLink to="/contact"
+                                     className={({isActive}) => isActive ? `${commonStyles.navLink} ${commonStyles.navLinkActive}` : commonStyles.navLink}>
+                                Contact
+                            </NavLink>
+                            <NavLink to="/feedback"
+                                     className={({isActive}) => isActive ? `${commonStyles.navLink} ${commonStyles.navLinkActive}` : commonStyles.navLink}>
+                                Feedback
+                            </NavLink>
+                        </div>
                     </div>
                 </div>
 
-                <div className={styles.footerSocial}>
+                <div className={styles.rowHeader}>
                     <p className={styles.footerHeading}>Social</p>
-                    <a href="https://www.linkedin.com/in/cedric-roux-4a171b253/" target="_blank"
-                       rel="noopener noreferrer">
-                        <img
-                            className={styles.socialIcon}
-                            src={`${import.meta.env.BASE_URL}icons/linkedin-in-white.png`}
-                            alt="LinkedIn"
-                        />
-                    </a>
-                    <a href="https://cedricoo.itch.io/" target="_blank" rel="noopener noreferrer">
-                        <img
-                            className={styles.socialIcon}
-                            src={`${import.meta.env.BASE_URL}icons/itchio-white.svg`}
-                            alt="itch.io"
-                        />
-                    </a>
-                    <a href="https://github.com/Cedricoooo" target="_blank" rel="noopener noreferrer">
-                        <img
-                            className={styles.socialIcon}
-                            src={`${import.meta.env.BASE_URL}icons/github-white.svg`}
-                            alt="GitHub"
-                        />
-                    </a>
-                    <a href="https://discord.gg/6CYUMAx65X" target="_blank" rel="noopener noreferrer">
-                        <img
-                            className={styles.socialIcon}
-                            src={`${import.meta.env.BASE_URL}icons/discord-white.svg`}
-                            alt="Discord"
-                        />
-                    </a>
+                    <div className={styles.rowGroup}>
+                        <a href="https://www.linkedin.com/in/cedric-roux-4a171b253/" target="_blank"
+                           rel="noopener noreferrer">
+                            <img
+                                className={styles.socialIcon}
+                                src={`${import.meta.env.BASE_URL}icons/linkedin-in-white.png`}
+                                alt="LinkedIn"
+                            />
+                        </a>
+                        <a href="https://cedricoo.itch.io/" target="_blank" rel="noopener noreferrer">
+                            <img
+                                className={styles.socialIcon}
+                                src={`${import.meta.env.BASE_URL}icons/itchio-white.svg`}
+                                alt="itch.io"
+                            />
+                        </a>
+                        <a href="https://github.com/Cedricoooo" target="_blank" rel="noopener noreferrer">
+                            <img
+                                className={styles.socialIcon}
+                                src={`${import.meta.env.BASE_URL}icons/github-white.svg`}
+                                alt="GitHub"
+                            />
+                        </a>
+                        <a href="https://discord.gg/6CYUMAx65X" target="_blank" rel="noopener noreferrer">
+                            <img
+                                className={styles.socialIcon}
+                                src={`${import.meta.env.BASE_URL}icons/discord-white.svg`}
+                                alt="Discord"
+                            />
+                        </a>
+                    </div>
                 </div>
             </section>
         </footer>
