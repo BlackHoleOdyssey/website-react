@@ -1,6 +1,6 @@
 ﻿import {useState, useEffect} from 'react';
 import {NavLink} from 'react-router-dom';
-import styles from './Navbar.module.css';
+import styles from './navbar.module.css';
 import commonStyles from '../../common.module.css';
 import NeonGlow from "../../neonblade-ui/neon-glow";
 

@@ -1,4 +1,4 @@
-﻿import styles from './Footer.module.css'
+﻿import styles from './footer.module.css'
 import NeonGlow from "../../neonblade-ui/neon-glow";
 import {NavLink} from "react-router-dom";
 import commonStyles from "../../common.module.css";
