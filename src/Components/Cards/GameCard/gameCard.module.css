@@ -1,0 +1,44 @@
+﻿.card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    border: 1px #ffffff solid;
+    padding: 16px;
+    min-height: 140px;
+}
+
+.coverImage {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(2px);
+    transform: scale(1.1);
+    z-index: 0;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.content {
+    position: relative;
+    z-index: 2;
+}
+
+.title {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 0 4px 0;
+}
+
+.subtitle {
+    color: #a1a1a1;
+    font-size: 12px;
+    margin: 0;
+}

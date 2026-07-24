@@ -59,3 +59,22 @@
 .viewGames:hover .glowWrapper {
     opacity: 1;
 }
+
+.gameSection {
+    margin: 32px;
+}
+
+.sectionLabel {
+    color: white;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.cardsGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    width: 100%;
+}
