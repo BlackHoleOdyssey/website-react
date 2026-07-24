@@ -1,8 +1,8 @@
-﻿import styles from "./GameCard.module.css";
-import type {Game}  from "../../../Types/model.ts";
+﻿import styles from "./homeCard.module.css";
+import type {HomeCard}  from "../../../Types/model.ts";
 
 interface GameCardProps {
-    game: Game;
+    game: HomeCard;
 }
 
 function GameCard({game}: GameCardProps) {

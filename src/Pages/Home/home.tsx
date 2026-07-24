@@ -2,8 +2,8 @@
 import style from './home.module.css';
 import styles from "../../Components/Layouts/Navbar/navbar.module.css";
 import NeonGlow from "../../Components/neonblade-ui/neon-glow";
-import GameCard from "../../Components/Cards/GameCard/gameCard";
-import { mockGame } from "../../Data/games";
+import GameCard from "../../Components/Cards/HomeCard/homeCard";
+import { mockGame, mockPackage } from "../../Data/cardData";
 
 function Home() {
     
@@ -35,6 +35,14 @@ function Home() {
                 <p className={style.sectionLabel}>Games</p>
                 <div className={style.cardsGrid}>
                     {mockGame.map((game) => (
+                        <GameCard key={game.id} game={game} />
+                    ))}
+                </div>
+            </section>
+            <section className={style.gameSection}>
+                <p className={style.sectionLabel}>Packages</p>
+                <div className={style.cardsGrid}>
+                    {mockPackage.map((game) => (
                         <GameCard key={game.id} game={game} />
                     ))}
                 </div>
