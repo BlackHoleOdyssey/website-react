@@ -22,14 +22,24 @@ function Home() {
                 <p className={style.description}>
                     Independent Studio - Games and Packages on Unity
                 </p>
-                <NavLink to="/games" className={style.viewGames}>
-                    <span className={style.buttonText}>View Games</span>
-                    <div className={style.glowWrapper}>
-                        <NeonGlow colors="#ffffff" glowIntensity="subtle">
-                            View Games
-                        </NeonGlow>
-                    </div>
-                </NavLink>
+                <div className={style.buttonContainer}>
+                    <NavLink to="/games" className={style.viewGames}>
+                        <span className={style.buttonText}>View Games</span>
+                        <div className={style.glowWrapper}>
+                            <NeonGlow colors="#ffffff" glowIntensity="subtle">
+                                View Games
+                            </NeonGlow>
+                        </div>
+                    </NavLink>
+                    <NavLink to="/packages" className={style.viewGames}>
+                        <span className={style.buttonText}>View Packages</span>
+                        <div className={style.glowWrapper}>
+                            <NeonGlow colors="#ffffff" glowIntensity="subtle">
+                                View Packages
+                            </NeonGlow>
+                        </div>
+                    </NavLink>
+                </div>
             </section>
             <section className={style.gameSection}> 
                 <p className={style.sectionLabel}>Games</p>
@@ -42,8 +52,8 @@ function Home() {
             <section className={style.gameSection}>
                 <p className={style.sectionLabel}>Packages</p>
                 <div className={style.cardsGrid}>
-                    {mockPackage.map((game) => (
-                        <GameCard key={game.id} game={game} />
+                    {mockPackage.map((pkg) => (
+                        <GameCard key={pkg.id} game={pkg} />
                     ))}
                 </div>
             </section>
