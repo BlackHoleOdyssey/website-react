@@ -42,9 +42,6 @@ function NavBar() {
                 </NavLink>
                 <NavLink to="/about" className={({ isActive }) => isActive ? `${commonStyles.navLink} ${commonStyles.navLinkActive}` : commonStyles.navLink}>                    About
                 </NavLink>
-                <NavLink to="/contact" className={({ isActive }) => isActive ? `${commonStyles.navLink} ${commonStyles.navLinkActive}` : commonStyles.navLink}>
-                    Contact
-                </NavLink>
             </nav>
         </header>
     );

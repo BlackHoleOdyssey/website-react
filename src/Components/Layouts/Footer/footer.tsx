@@ -25,7 +25,9 @@ function Footer() {
 
                 <div className={styles.footerNav}>
                     <div className={styles.rowHeader}>
-                        <p className={styles.footerHeading}>Explorer</p>
+                        <NeonGlow colors="#ffffff" glowIntensity={"subtle"}>
+                            <p className={styles.footerHeading}>Explorer</p>
+                        </NeonGlow>
                         <div className={styles.rowGroup}>
                             <NavLink to="/games"
                                      className={({isActive}) => isActive ? `${commonStyles.navLink} ${commonStyles.navLinkActive}` : commonStyles.navLink}>
@@ -44,19 +46,13 @@ function Footer() {
                                 Feedback
                             </NavLink>
                         </div>
-
-                        <div className={styles.contact}>
-                            <p>
-                                E-mail :
-                            </p>
-                            <EmailLink email="roux.cedric24@gmail.com" />
-                        </div>
-                        
                     </div>
                 </div>
 
                 <div className={styles.rowHeader}>
-                    <p className={styles.footerHeading}>Social</p>
+                    <NeonGlow colors="#ffffff" glowIntensity={"subtle"}>
+                        <p className={styles.footerHeading}>Social</p> 
+                    </NeonGlow>
                     <div className={styles.rowGroup}>
                         <a href="https://www.linkedin.com/in/cedric-roux-4a171b253/" target="_blank"
                            rel="noopener noreferrer">
@@ -87,6 +83,9 @@ function Footer() {
                                 alt="Discord"
                             />
                         </a>
+                    </div>
+                    <div className={styles.contact}>
+                        <EmailLink email="roux.cedric24@gmail.com" />
                     </div>
                 </div>
             </section>

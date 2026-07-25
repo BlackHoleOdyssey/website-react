@@ -1,5 +1,4 @@
 ﻿import {useState} from "react";
-import NeonGlow from "../../neonblade-ui/neon-glow";
 
 const EmailLink = ({email}: { email: string }) => {
     const [copied, setCopied] = useState(false);
@@ -20,12 +19,7 @@ const EmailLink = ({email}: { email: string }) => {
           onClick={copyToClipboard}
           style={{cursor: "pointer"}}
       >
-          <NeonGlow 
-          colors="#ffffff"
-          glowIntensity={"subtle"}>
               {email}
-          </NeonGlow>
-        
       </span>
 
             {copied && <span style={{marginLeft: "8px", color: "#585c5c"}}>Email copié</span>}
