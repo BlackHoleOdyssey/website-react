@@ -1,6 +1,7 @@
 ﻿import styles from './footer.module.css'
 import NeonGlow from "../../neonblade-ui/neon-glow";
 import {NavLink} from "react-router-dom";
+import EmailLink from "../EmailLink/emailLink.tsx";
 import commonStyles from "../../common.module.css";
 
 function Footer() {
@@ -20,7 +21,6 @@ function Footer() {
                     <div>
                         <p className={styles.copyright}>© 2026 Black Hole Odyssey. All rights reserved.</p>
                     </div>
-
                 </div>
 
                 <div className={styles.footerNav}>
@@ -39,15 +39,19 @@ function Footer() {
                                      className={({isActive}) => isActive ? `${commonStyles.navLink} ${commonStyles.navLinkActive}` : commonStyles.navLink}>
                                 About
                             </NavLink>
-                            <NavLink to="/contact"
-                                     className={({isActive}) => isActive ? `${commonStyles.navLink} ${commonStyles.navLinkActive}` : commonStyles.navLink}>
-                                Contact
-                            </NavLink>
                             <NavLink to="/feedback"
                                      className={({isActive}) => isActive ? `${commonStyles.navLink} ${commonStyles.navLinkActive}` : commonStyles.navLink}>
                                 Feedback
                             </NavLink>
                         </div>
+
+                        <div className={styles.contact}>
+                            <p>
+                                E-mail :
+                            </p>
+                            <EmailLink email="roux.cedric24@gmail.com" />
+                        </div>
+                        
                     </div>
                 </div>
 

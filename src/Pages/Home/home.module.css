@@ -74,7 +74,14 @@
 
 .cardsGrid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-template-columns: repeat(3, minmax(240px, 1fr));
     gap: 32px;
     width: 100%;
+    justify-content: start;
+}
+
+@media (max-width: 768px) {
+    .cardsGrid {
+        grid-template-columns: 1fr;
+    }
 }

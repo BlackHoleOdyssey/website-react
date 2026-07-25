@@ -14,7 +14,6 @@ function App() {
                     <Route path="/games" element={<div></div>}/>
                     <Route path="/packages" element={<div></div>}/>
                     <Route path="/about" element={<div></div>}/>
-                    <Route path="/contact" element={<div></div>}/>
                 </Routes>
             </main>
             <Footer />

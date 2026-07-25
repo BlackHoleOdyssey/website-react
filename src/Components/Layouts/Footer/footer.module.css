@@ -10,7 +10,7 @@
     align-items: stretch;
     flex-wrap: wrap;
     gap: 24px;
-    
+
     border-top: 1px solid #2a2a2a;
     padding: 16px 64px;
     margin-top: 16px;
@@ -39,7 +39,7 @@
 
 .footerHeading {
     grid-column: 1 / -1;
-    
+
     font-size: 20px;
     font-weight: bold;
     color: white;
@@ -75,4 +75,11 @@
 .description {
     font-size: 16px;
     color: #585c5c;
+}
+
+.contact {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
 }
