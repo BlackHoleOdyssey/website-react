@@ -1,5 +1,8 @@
 ﻿import styles from "./homeCard.module.css";
 import type {HomeCard}  from "../../../Types/model.ts";
+import "../../../Common/colors.css";
+import "../../../Common/spacing.css";
+import "../../../Common/typography.css";
 
 interface GameCardProps {
     game: HomeCard;
