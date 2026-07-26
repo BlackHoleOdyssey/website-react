@@ -1,8 +1,11 @@
 ﻿import {useState, useEffect} from 'react';
 import {NavLink} from 'react-router-dom';
 import styles from './navbar.module.css';
-import commonStyles from '../../common.module.css';
+import commonStyles from "../../../Common/common.module.css";
 import NeonGlow from "../../neonblade-ui/neon-glow";
+import "../../../Common/colors.css";
+import "../../../Common/spacing.css";
+import "../../../Common/typography.css";
 
 function NavBar() {
     const [isScrolled, setIsScrolled] = useState(false);

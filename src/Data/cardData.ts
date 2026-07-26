@@ -21,12 +21,26 @@ export const mockGame : HomeCard[] = [
         subtitle: "Prototype",
         coverImage: `${import.meta.env.BASE_URL}games/rider-cover.png`,
         platform: "Steam"
-    },
+    }
 ]
 
 export const mockPackage : HomeCard[] = [
     {
         id: 1,
+        title: "Scene Reference",
+        subtitle: "Create SceneReference type on Unity to load scene with SceneAsset",
+        coverImage: `${import.meta.env.BASE_URL}packages/scene-reference-cover.png`,
+        platform: "Unity"
+    },
+    {
+        id: 2,
+        title: "Scene Reference",
+        subtitle: "Create SceneReference type on Unity to load scene with SceneAsset",
+        coverImage: `${import.meta.env.BASE_URL}packages/scene-reference-cover.png`,
+        platform: "Unity"
+    },
+    {
+        id: 3,
         title: "Scene Reference",
         subtitle: "Create SceneReference type on Unity to load scene with SceneAsset",
         coverImage: `${import.meta.env.BASE_URL}packages/scene-reference-cover.png`,

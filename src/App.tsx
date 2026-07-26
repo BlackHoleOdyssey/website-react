@@ -1,4 +1,5 @@
 import './App.css'
+import './Common/colors.css'
 import NavBar from './Components/Layouts/Navbar/navbar'
 import Footer from './Components/Layouts/Footer/footer'
 import Home from './Pages/Home/home'
