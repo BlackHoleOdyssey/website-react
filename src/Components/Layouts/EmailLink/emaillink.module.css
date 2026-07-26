@@ -1,0 +1,8 @@
+﻿.pointer {
+    cursor: pointer;
+}
+
+.copied {
+    color: var(--color-text-secondary);
+    margin-left: var(--space-xs);
+}

@@ -1,4 +1,7 @@
 ﻿import {useState} from "react";
+import style from './emaillink.module.css';
+import "../../../Common/colors.css";
+import "../../../Common/spacing.css";
 
 const EmailLink = ({email}: { email: string }) => {
     const [copied, setCopied] = useState(false);
@@ -15,14 +18,13 @@ const EmailLink = ({email}: { email: string }) => {
 
     return (
         <div>
-      <span
-          onClick={copyToClipboard}
-          style={{cursor: "pointer"}}
-      >
+          <span onClick={copyToClipboard} className={style.pointer}>
               {email}
-      </span>
+          </span>
 
-            {copied && <span style={{marginLeft: "8px", color: "#585c5c"}}>Email copié</span>}
+            {copied && <span className={style.copied}>
+                    Email copié
+                </span>}
         </div>
     );
 };
