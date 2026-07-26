@@ -4,18 +4,20 @@ import styles from "../../Components/Layouts/Navbar/navbar.module.css";
 import NeonGlow from "../../Components/neonblade-ui/neon-glow";
 import GameCard from "../../Components/Cards/HomeCard/homeCard";
 import {mockGame, mockPackage} from "../../Data/cardData";
+import {useCssVar} from "../../Scripts/useCssVar";
 import "../../Common/colors.css";
 import "../../Common/spacing.css";
 import "../../Common/typography.css";
 import "../../Common/effects.css";
 
 function Home() {
+    const titleColor = useCssVar("--color-text-primary");
 
     return (
         <section>
             <section className={style.hero}>
                 <NeonGlow
-                    colors="#ffffff"
+                    colors={titleColor}
                     glowIntensity={"subtle"}
                     className={styles.title}
                 >
@@ -30,7 +32,7 @@ function Home() {
                     <NavLink to="/games" className={style.viewGames}>
                         <span className={style.buttonText}>View Games</span>
                         <div className={style.glowWrapper}>
-                            <NeonGlow colors="#ffffff" glowIntensity="subtle">
+                            <NeonGlow colors={titleColor}>
                                 View Games
                             </NeonGlow>
                         </div>
@@ -38,7 +40,7 @@ function Home() {
                     <NavLink to="/packages" className={style.viewGames}>
                         <span className={style.buttonText}>View Packages</span>
                         <div className={style.glowWrapper}>
-                            <NeonGlow colors="#ffffff" glowIntensity="subtle">
+                            <NeonGlow colors={titleColor}>
                                 View Packages
                             </NeonGlow>
                         </div>
@@ -46,8 +48,8 @@ function Home() {
                 </div>
             </section>
             <section className={style.gameSection}>
-                <NeonGlow colors="#ffffff" glowIntensity="subtle">
-                <p className={style.sectionLabel}>Games</p>
+                <NeonGlow colors={titleColor}>
+                    <p className={style.sectionLabel}>Games</p>
                 </NeonGlow>
                 <div className={style.cardsGrid}>
                     {mockGame.map((game) => (
@@ -56,7 +58,7 @@ function Home() {
                 </div>
             </section>
             <section className={style.gameSection}>
-                <NeonGlow colors="#ffffff" glowIntensity="subtle">
+                <NeonGlow colors={titleColor}>
                     <p className={style.sectionLabel}>Packages</p>
                 </NeonGlow>
                 <div className={style.cardsGrid}>
@@ -67,7 +69,7 @@ function Home() {
             </section>
             <div className={style.line}></div>
             <section className={style.gameSection}>
-                <NeonGlow colors="#ffffff" glowIntensity="subtle">
+                <NeonGlow colors={titleColor}>
                     <p className={style.sectionLabel}>About Black Hole Odyssey</p>
                 </NeonGlow>
                 <div className={style.aboutContainer}>

@@ -67,6 +67,7 @@
 }
 
 .title {
+    color: var(--color-text-primary);
     font-size: var(--font-size-footer-title);
 }
 

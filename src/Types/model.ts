@@ -4,5 +4,5 @@
     subtitle: string;
     coverImage: string;
     platform?: string;
-    link?: string; 
+    link?: string;
 }

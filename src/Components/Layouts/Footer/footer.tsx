@@ -6,14 +6,17 @@ import commonStyles from "../../../Common/common.module.css";
 import "../../../Common/colors.css";
 import "../../../Common/spacing.css";
 import "../../../Common/typography.css";
+import {useCssVar} from "../../../Scripts/useCssVar.tsx";
 
 function Footer() {
+    const titleColor = useCssVar("--color-text-primary");
+    
     return (
         <footer className={styles.footer}>
             <section className={styles.footerContent}>
                 <div className={styles.footerInfo}>
                     <div>
-                        <NeonGlow colors="#ffffff" glowIntensity={"subtle"}>
+                        <NeonGlow colors={titleColor}>
                             <p className={styles.title}>Black Hole Odyssey</p>
                         </NeonGlow>
                         <p className={styles.description}>
@@ -28,7 +31,7 @@ function Footer() {
 
                 <div className={styles.footerNav}>
                     <div className={styles.rowHeader}>
-                        <NeonGlow colors="#ffffff" glowIntensity={"subtle"}>
+                        <NeonGlow colors={titleColor}>
                             <p className={styles.footerHeading}>Explorer</p>
                         </NeonGlow>
                         <div className={styles.rowGroup}>
@@ -53,7 +56,7 @@ function Footer() {
                 </div>
 
                 <div className={styles.rowHeader}>
-                    <NeonGlow colors="#ffffff" glowIntensity={"subtle"}>
+                    <NeonGlow colors={titleColor}>
                         <p className={styles.footerHeading}>Social</p> 
                     </NeonGlow>
                     <div className={styles.rowGroup}>

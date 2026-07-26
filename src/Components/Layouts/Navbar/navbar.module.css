@@ -1,4 +1,12 @@
-﻿.navbar {
+﻿.title {
+    margin: var(--space-md);
+    font-size: var(--font-size-footer-title);
+    white-space: nowrap;
+    color: var(--color-text-primary);
+}
+
+.navbar {
+    color: var(--color-text-primary);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -19,6 +27,7 @@
 }
 
 .navbarScrolled {
+    color: var(--color-text-primary);
     top: var(--space-lg);
     left: 0;
     right: 0;
@@ -29,13 +38,8 @@
 }
 
 .navLinks {
+    color: var(--color-text-primary);
     display: flex;
     gap: var(--space-xl);
     flex-wrap: nowrap;
-}
-
-.title {
-    margin: var(--space-md);
-    font-size: var(--font-size-footer-title);
-    white-space: nowrap;
 }
