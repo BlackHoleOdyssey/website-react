@@ -1,6 +1,8 @@
 import './App.css'
-import NavBar from './Components/Layouts/Navbar/Navbar'
-import Footer from './Components/Layouts/Footer/Footer'
+import './Common/colors.css'
+import NavBar from './Components/Layouts/Navbar/navbar'
+import Footer from './Components/Layouts/Footer/footer'
+import Home from './Pages/Home/home'
 import {Route, Routes} from "react-router-dom";
 
 function App() {
@@ -9,11 +11,10 @@ function App() {
             <NavBar />
             <main className="main-content">
                 <Routes>
-                    <Route path="/" element={<div></div>}/>
+                    <Route path="/" element={<Home />}/>
                     <Route path="/games" element={<div></div>}/>
                     <Route path="/packages" element={<div></div>}/>
                     <Route path="/about" element={<div></div>}/>
-                    <Route path="/contact" element={<div></div>}/>
                 </Routes>
             </main>
             <Footer />

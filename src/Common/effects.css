@@ -1,0 +1,13 @@
+﻿:root {
+    --glow: 0 0 10px color-mix(in srgb, var(--color-text-primary) 30%, transparent),
+    inset 0 0 15px color-mix(in srgb, var(--color-text-primary) 30%, transparent);
+}
+
+.glow {
+    box-shadow: var(--glow);
+}
+
+.blur {
+    filter: blur(1px);
+}
+

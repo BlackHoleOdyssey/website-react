@@ -1,0 +1,9 @@
+﻿:root {
+    --color-bg-dark: #050505;
+    --color-text-primary: #ffffff;
+    --color-text-secondary: #939393;
+    --color-text-home-card-description: #ffffff;
+    --color-overlay: rgb(0 0 0 / 0.7);
+    --color-border: #ffffff;
+    --color-border-dark: #2a2a2a;
+}

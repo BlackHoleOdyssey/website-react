@@ -1,0 +1,20 @@
+﻿
+
+.navLink {
+    color: var(--color-text-secondary);
+    text-decoration: none;
+
+    transition: color 0.3s ease;
+}
+
+.navLink:hover {
+    color: var(--color-text-primary);
+
+    transition: color 0.3s ease;
+}
+
+.navLinkActive {
+    color: var(--color-text-primary);
+
+    transition: color 0.3s ease;
+}

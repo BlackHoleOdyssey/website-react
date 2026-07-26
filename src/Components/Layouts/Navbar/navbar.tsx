@@ -1,11 +1,16 @@
 ﻿import {useState, useEffect} from 'react';
 import {NavLink} from 'react-router-dom';
-import styles from './Navbar.module.css';
-import commonStyles from '../../common.module.css';
+import styles from './navbar.module.css';
+import commonStyles from "../../../Common/common.module.css";
 import NeonGlow from "../../neonblade-ui/neon-glow";
+import {useCssVar} from "../../../Scripts/useCssVar";
+import "../../../Common/colors.css";
+import "../../../Common/spacing.css";
+import "../../../Common/typography.css";
 
 function NavBar() {
     const [isScrolled, setIsScrolled] = useState(false);
+    const titleColor = useCssVar("--color-text-primary");
 
     useEffect(() => {
         const handleScroll = () => {
@@ -22,8 +27,7 @@ function NavBar() {
     return (
         <header className={isScrolled ? styles.navbar + ' ' + styles.navbarScrolled : styles.navbar}>
             <NeonGlow
-                colors="#ffffff"
-                glowIntensity={"subtle"}
+                colors={titleColor}
                 className={styles.title}
             >
                 <h1>
@@ -41,9 +45,6 @@ function NavBar() {
                     Packages
                 </NavLink>
                 <NavLink to="/about" className={({ isActive }) => isActive ? `${commonStyles.navLink} ${commonStyles.navLinkActive}` : commonStyles.navLink}>                    About
-                </NavLink>
-                <NavLink to="/contact" className={({ isActive }) => isActive ? `${commonStyles.navLink} ${commonStyles.navLinkActive}` : commonStyles.navLink}>
-                    Contact
                 </NavLink>
             </nav>
         </header>

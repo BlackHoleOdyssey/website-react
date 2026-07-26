@@ -1,0 +1,36 @@
+﻿:root {
+    /* ============================================
+       Échelle de base (neutre, réutilisable)
+       ============================================ */
+    --font-size-3xl: 3rem;
+    --font-size-2xl: 2rem;
+    --font-size-xl: 1.5rem;
+    --font-size-lg: 1.25rem;
+    --font-size-md: 1rem;
+    --font-size-sm: 0.875rem;
+    --font-size-xs: 0.75rem;
+
+    --font-weight-bold: 700;
+
+    /* ============================================
+       Alias sémantiques — usage général
+       ============================================ */
+    --font-size-page-title: var(--font-size-3xl);
+    --font-size-page-subtitle: var(--font-size-xl);
+    --font-size-page-label: var(--font-size-lg);
+    --font-size-page-description: var(--font-size-lg);
+
+    /* ============================================
+       Alias sémantiques — footer
+       ============================================ */
+    --font-size-footer-title: var(--font-size-xl);
+    --font-size-footer-subtitle: var(--font-size-lg);
+    --font-size-footer-description: var(--font-size-sm);
+
+    /* ============================================
+      Letter spacing
+      ============================================ */
+    --letter-spacing-xs: 0.75rem;
+    --letter-spacing-sm: 0.875rem;
+    --letter-spacing-md: 1rem;
+}
