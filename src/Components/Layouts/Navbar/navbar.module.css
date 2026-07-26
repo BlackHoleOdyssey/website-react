@@ -36,6 +36,6 @@
 
 .title {
     margin: var(--space-md);
-    font-size: var(--font-size-nav-title);
+    font-size: var(--font-size-main-title);
     white-space: nowrap;
 }

@@ -1,3 +1,7 @@
 ﻿:root {
-    --font-size-nav-title: clamp(0.5rem, 4vw + 0.5rem, 2rem);
+    --font-size-main-title: 2rem;
+    --font-size-title: 1.25rem;
+    --font-size-description: 1rem;
+
+    --font-weight-bold: 700;
 }

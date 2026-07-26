@@ -3,6 +3,9 @@ import NeonGlow from "../../neonblade-ui/neon-glow";
 import {NavLink} from "react-router-dom";
 import EmailLink from "../EmailLink/emailLink.tsx";
 import commonStyles from "../../../Common/common.module.css";
+import "../../../Common/colors.css";
+import "../../../Common/spacing.css";
+import "../../../Common/typography.css";
 
 function Footer() {
     return (
