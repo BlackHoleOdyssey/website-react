@@ -11,7 +11,7 @@
     flex-wrap: wrap;
     gap: var(--space-lg);
 
-    border-top: 1px solid var(--color-border-dark);
+    border-top: var(--page-separator);
     padding: var(--space-md) var(--space-3xl);
     margin-top: var(--space-md);
 }
@@ -38,7 +38,7 @@
 .footerHeading {
     grid-column: 1 / -1;
 
-    font-size: var(--font-size-title);
+    font-size: var(--font-size-footer-subtitle);
     font-weight: var(--font-weight-bold);
     color: var(--color-text-primary);
 }
@@ -67,11 +67,11 @@
 }
 
 .title {
-    font-size: var(--font-size-main-title);
+    font-size: var(--font-size-footer-title);
 }
 
 .description {
-    font-size: var(--font-size-description);
+    font-size: var(--font-size-footer-description);
     color: var(--color-text-secondary);
 }
 

@@ -1,7 +1,7 @@
 ﻿.card {
     position: relative;
     overflow: hidden;
-    border-radius: var(--space-md);
+    border-radius: var(--border-radius-md);
     border: 1px var(--color-text-primary) solid;
     padding: var(--space-md);
     aspect-ratio: 16 / 9;

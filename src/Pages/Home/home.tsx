@@ -4,6 +4,10 @@ import styles from "../../Components/Layouts/Navbar/navbar.module.css";
 import NeonGlow from "../../Components/neonblade-ui/neon-glow";
 import GameCard from "../../Components/Cards/HomeCard/homeCard";
 import {mockGame, mockPackage} from "../../Data/cardData";
+import "../../Common/colors.css";
+import "../../Common/spacing.css";
+import "../../Common/typography.css";
+import "../../Common/effects.css";
 
 function Home() {
 

@@ -6,4 +6,9 @@
     --space-xl: 2rem;      /* 32px */
     --space-2xl: 3rem;     /* 48px */
     --space-3xl: 4rem;     /* 64px */
+    
+    --border-radius-md: var(--space-lg);
+    --border-radius-sm: var(--space-sm);
+    
+    --page-separator: 1px solid var(--color-border-dark);
 }

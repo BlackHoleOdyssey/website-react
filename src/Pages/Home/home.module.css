@@ -9,14 +9,14 @@
 }
 
 .title {
-    color:white;
-    font-size: 48px;
-    font-weight: bold;
+    color: var(--color-text-primary);
+    font-size: var(--font-size-page-title);
+    font-weight: var(--font-weight-bold);
 }
 
 .description {
-    color: #585c5c;
-    font-size: 24px;
+    color: var(--color-text-secondary);
+    font-size: var(--font-size-page-description)
 }
 
 .viewGames {
@@ -24,20 +24,20 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 8px;
-    border: 2px white solid;
+    border-radius: var(--border-radius-sm);
+    border: 2px var(--color-text-primary) solid;
     width: 140px;
     height: 40px;
-    color: white;
+    color: var(--color-text-primary);
     text-decoration: none;
-    margin-top: 32px;
+    margin-top: var(--space-xl);
     overflow: hidden; 
 
     transition: box-shadow 0.2s ease-in-out;
 }
 
 .buttonText {
-    color: #ffffff;
+    color: var(--color-text-primary);
 }
 
 .glowWrapper {
@@ -52,8 +52,7 @@
 }
 
 .viewGames:hover {
-    box-shadow: 0 0 8px rgba(255, 255, 255, 0.3),
-    inset 0 0 8px rgba(255, 255, 255, 0.3);
+    box-shadow: var(--glow);
 }
 
 .viewGames:hover .glowWrapper {
@@ -61,21 +60,21 @@
 }
 
 .gameSection {
-    margin: 32px;
+    margin: var(--space-xl);
 }
 
 .sectionLabel {
-    color: white;
-    font-size: 20px;
-    letter-spacing: 2px;
+    color: var(--color-text-primary);
+    font-size: var(--font-size-page-label);
+    letter-spacing: var(--letter-spacing-sm);
     text-transform: uppercase;
-    margin-bottom: 12px;
+    margin-bottom: var(--space-md);
 }
 
 .cardsGrid {
     display: grid;
     grid-template-columns: repeat(3, minmax(240px, 1fr));
-    gap: 32px;
+    gap: var(--space-xl);
     width: 100%;
     justify-content: start;
 }
@@ -96,27 +95,27 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 16px;
+    gap: var(--space-md);
 }
 
 .aboutContainer {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: var(--space-md);
 }
 
 .aboutText {
-    color: white;
-    font-size: 16px;
+    color: var(--color-text-secondary);
+    font-size: var(--font-size-page-description);
 }
 
 .link {
-    color: white;
+    color: var(--color-text-primary);
     text-decoration: underline;
 }
 
 .line {
     width: 98%;
-    margin: 32px auto;
-    border-top: 1px solid #2a2a2a;
+    margin: var(--space-xl) auto;
+    border-top: var(--page-separator);
 }
