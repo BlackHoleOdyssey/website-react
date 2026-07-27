@@ -1,4 +1,4 @@
-﻿import {Link, NavLink} from "react-router-dom";
+﻿import {Link} from "react-router-dom";
 import style from './home.module.css';
 import styles from "../../Components/Layouts/Navbar/navbar.module.css";
 import NeonGlow from "../../Components/neonblade-ui/neon-glow";
@@ -9,6 +9,7 @@ import "../../Common/colors.css";
 import "../../Common/spacing.css";
 import "../../Common/typography.css";
 import "../../Common/effects.css";
+import DefaultButton from "../../Components/Buttons/DefaultButton/defaultButton.tsx";
 
 function Home() {
     const titleColor = useCssVar("--color-text-primary");
@@ -29,22 +30,8 @@ function Home() {
                     Independent Studio - Games and Packages on Unity
                 </p>
                 <div className={style.buttonContainer}>
-                    <NavLink to="/games" className={style.viewGames}>
-                        <span className={style.buttonText}>View Games</span>
-                        <div className={style.glowWrapper}>
-                            <NeonGlow colors={titleColor}>
-                                View Games
-                            </NeonGlow>
-                        </div>
-                    </NavLink>
-                    <NavLink to="/packages" className={style.viewGames}>
-                        <span className={style.buttonText}>View Packages</span>
-                        <div className={style.glowWrapper}>
-                            <NeonGlow colors={titleColor}>
-                                View Packages
-                            </NeonGlow>
-                        </div>
-                    </NavLink>
+                    <DefaultButton to="/games" label="View Games" titleColor={titleColor} />
+                    <DefaultButton to="/packages" label="View Packages" titleColor={titleColor} />
                 </div>
             </section>
             <section className={style.gameSection}>
