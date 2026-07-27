@@ -22,16 +22,16 @@ function BurgerMenu({ onClose, isClosing }: BurgerMenuProps) {
                 </button>
             </div>
             <div className={style.burgerMenu}>
-                <NavLink to="/" end className={commonStyle.navLink} onClick={onClose}>
+                <NavLink to="/" end className={`${commonStyle.navLink} ${style.burgerLink}`} onClick={onClose}>
                     Home
                 </NavLink>
-                <NavLink to="/games" className={commonStyle.navLink} onClick={onClose}>
+                <NavLink to="/games" className={`${commonStyle.navLink} ${style.burgerLink}`} onClick={onClose}>
                     Games
                 </NavLink>
-                <NavLink to="/packages" className={commonStyle.navLink} onClick={onClose}>
+                <NavLink to="/packages" className={`${commonStyle.navLink} ${style.burgerLink}`} onClick={onClose}>
                     Packages
                 </NavLink>
-                <NavLink to="/about" className={commonStyle.navLink} onClick={onClose}>
+                <NavLink to="/about" className={`${commonStyle.navLink} ${style.burgerLink}`} onClick={onClose}>
                     About
                 </NavLink>
             </div>

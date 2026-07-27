@@ -8,7 +8,7 @@
     top: 0;
     right: 0;
     
-    width: 60%;
+    width: 40%;
     height: 100%;
     
     background-color: var(--color-bg-dark);
@@ -20,9 +20,9 @@
 .burgerMenu {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: flex-start;
     height: 100%;
-    padding: 0 var(--space-lg) 0 0;
+    padding: 0 0 0 var(--space-lg);
     box-sizing: border-box;
     gap: var(--space-lg);
 }
@@ -31,7 +31,7 @@
 {
     display: flex;
     justify-content: space-between;
-    padding: var(--space-md) var(--space-lg) 0 var(--space-md)
+    padding: var(--space-md) var(--space-lg) 0 var(--space-lg)
 }
 
 .burgerMenuTitle {
@@ -44,6 +44,14 @@
 
 .burgerMenuClosing {
     animation: slideOutRight 300ms ease-in forwards;
+}
+
+.burgerLink {
+    font-size: var(--font-size-xl);
+}
+
+.burgerMenuCloseButton {
+    font-size: var(--font-size-xl);
 }
 
 @keyframes slideInRight {
