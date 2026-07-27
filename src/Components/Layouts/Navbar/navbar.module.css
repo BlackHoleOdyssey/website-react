@@ -37,9 +37,74 @@
     composes: glow from '../../../Common/effects.css';
 }
 
-.navLinks {
-    color: var(--color-text-primary);
+.desktopMenu {
     display: flex;
-    gap: var(--space-xl);
     flex-wrap: nowrap;
+    color: var(--color-text-primary);
+    gap: var(--space-xl);
+}
+
+.burgerButton {
+    display: none;
+
+    animation : unblur linear 0.3s forwards;
+}
+
+.mobileOverlay {
+    position: fixed;
+    inset: 0;
+    z-index: 999;
+    background: rgba(0, 0, 0, 0.25);
+    
+    animation: overlayBlurIn 300ms ease-out forwards;
+}
+
+.mobileOverlayClosing {
+    animation: overlayBlurOut 300ms ease-in forwards;
+}
+
+.mobileMenu {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    pointer-events: none;
+}
+
+.mobileMenu > * {
+    pointer-events: auto;
+}
+
+@media (max-width: 768px) {
+    .desktopMenu {
+        display: none;
+    }
+    .burgerButton {
+        display: block;
+    }
+}
+
+@keyframes overlayBlurIn {
+    from {
+        backdrop-filter: blur(0);
+        -webkit-backdrop-filter: blur(0);
+        opacity: 0;
+    }
+    to {
+        backdrop-filter: blur(6px);
+        -webkit-backdrop-filter: blur(6px);
+        opacity: 1;
+    }
+}
+
+@keyframes overlayBlurOut {
+    from {
+        backdrop-filter: blur(6px);
+        -webkit-backdrop-filter: blur(6px);
+        opacity: 1;
+    }
+    to {
+        backdrop-filter: blur(0);
+        -webkit-backdrop-filter: blur(0);
+        opacity: 0;
+    }
 }
