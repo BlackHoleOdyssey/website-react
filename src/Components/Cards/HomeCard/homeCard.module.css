@@ -71,6 +71,7 @@
     white-space: nowrap;
 }
 
+
 .platformIcon {
     position: absolute;
     top: var(--space-md);

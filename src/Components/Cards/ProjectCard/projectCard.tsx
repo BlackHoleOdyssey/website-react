@@ -2,8 +2,6 @@
 import style from './projectCard.module.css';
 import React from "react";
 import {Carousel} from "../../Carousel/carousel.tsx";
-import DefaultButton from "../../Buttons/DefaultButton/defaultButton.tsx";
-import {useCssVar} from "../../../Scripts/useCssVar.tsx";
 
 interface ProjectCardProps {
     project: ProjectData;
@@ -32,9 +30,6 @@ function ProjectCard({project, reversed = false}: ProjectCardProps) {
         ? project.screenshot
         : (project.coverImage ? [project.coverImage] : []);
     
-    const titleColor = useCssVar("--color-text-primary");
-    
-    // @ts-ignore
     return (
         <section className={`${style.projectContainer} ${reversed ? style.reversed : ''}`}>
             <div className={style.coverImage}>
@@ -86,14 +81,12 @@ function ProjectCard({project, reversed = false}: ProjectCardProps) {
                         ></span>
                             <p className={style.iconText}>{project.releaseDate}</p>
                         </div>
-                        <a href={project.link} target="_blank" rel="noopener noreferrer">
-                            <img className={style.platformIcon} src={project.platformLogo} alt="platform" />
+                    </div>
+                    <div>
+                        <a href={project.link} target="_blank" rel="noopener noreferrer" className={style.platformLogoContainer}>
+                            <img className={style.platformIcon} src={project.platformBadge} alt="platform" />
                         </a>
                     </div>
-                    <div className={style.playButton}>
-                        <DefaultButton to={project.link} label="Play Now" titleColor={titleColor} />
-                    </div>
-                    
                 </div>
             </div>
         </section>
