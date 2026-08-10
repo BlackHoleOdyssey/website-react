@@ -7,14 +7,15 @@
 
 .gamesTitle {
     color: var(--color-text-primary);
-    font-size: var(--font-size-page-title);
+    font-size: clamp(var(--font-size-xl), 4vw, var(--font-size-page-title));
     font-weight: var(--font-weight-bold);
     padding: 0 20%;
+    text-align: center;
 }
 
 .gamesDescription {
     color: var(--color-text-secondary);
-    font-size: var(--font-size-page-description);
+    font-size: clamp(var(--font-size-md), 4vw, var(--font-size-page-description));
     text-align: center;
     padding: 0 20%;
 }

@@ -81,10 +81,8 @@ function ProjectCard({project, reversed = false}: ProjectCardProps) {
                         ></span>
                             <p className={style.iconText}>{project.releaseDate}</p>
                         </div>
-                    </div>
-                    <div>
-                        <a href={project.link} target="_blank" rel="noopener noreferrer" className={style.platformLogoContainer}>
-                            <img className={style.platformIcon} src={project.platformBadge} alt="platform" />
+                        <a href={project.link} target="_blank" rel="noopener noreferrer" className={style.platformIcon}>
+                            <img className={style.platformIcon} src={project.platformLogo} alt="platform" />
                         </a>
                     </div>
                 </div>

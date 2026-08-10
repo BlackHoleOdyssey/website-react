@@ -47,9 +47,6 @@
 
 .projectCardFooterContainer {
     display: flex;
-    flex-direction: column;
-    gap: var(--space-md);
-    align-items: start;
     justify-content: space-between;
     width: 100%;
 }
@@ -57,6 +54,7 @@
 .projectCardFooter {
     display: flex;
     gap: var(--space-md);
+    align-items: center;
 }
 
 .playButton {
@@ -119,18 +117,9 @@
     flex-wrap: nowrap;
 }
 
-.platformLogoContainer {
-    display: inline-flex;
-    padding: var(--space-sm);
-    border: 2px solid var(--color-text-primary);
-    border-radius: var(--border-radius-md);
-    flex-shrink: 0;
-}
-
 .platformIcon {
-    height: var(--space-lg);
-    width: auto;
-    display: block;
+    height: var(--space-xl);
+    width: var(--space-xl);
 }
 
 .reversed {
