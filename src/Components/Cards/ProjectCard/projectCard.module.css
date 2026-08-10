@@ -1,0 +1,148 @@
+﻿.projectContainer {
+    display: flex;
+    gap: var(--space-xl);
+    align-items: flex-start;
+}
+
+.coverImage {
+    width: 50%;
+    box-sizing: border-box;
+    position: relative;
+
+    border-radius: var(--border-radius-md);
+}
+
+.projectInformation {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex: 1;
+}
+
+.projectTitle {
+    color: var(--color-text-primary);
+    font-size: clamp(var(--font-size-md), 2vw, var(--font-size-2xl));
+}
+
+.projectGenre {
+    display: flex;
+    color: var(--color-text-secondary);
+    gap: var(--space-md);
+}
+
+.genreItem {
+    color: var(--color-text-primary);
+    font-size: clamp(var(--font-size-xs), 2vw, var(--font-size-sm));
+    background-color: var(--color-text-secondary);
+    padding: var(--space-sm) var(--space-md);
+    border-radius: var(--border-radius-md);
+}
+
+.projectDescription {
+    color: var(--color-text-secondary);
+    font-size: clamp(var(--font-size-sm), 2vw, var(--font-size-lg));
+}
+
+.projectCardFooterContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.projectCardFooter {
+    display: flex;
+    gap: var(--space-md);
+    align-items: center;
+}
+
+.playButton {
+    margin-left: var(--space-xl);
+}
+
+.status {
+    text-transform: capitalize;
+    padding: var(--space-sm) var(--space-md);
+    border-radius: var(--border-radius-md);
+    font-size: clamp(var(--font-size-xs), 2vw, var(--font-size-md));
+    font-weight: var(--font-weight-medium);
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.statusReleased {
+    color: var(--color-release-text);
+    background-color: var(--color-release-bg);
+}
+
+.statusInProgress {
+    color: var(--color-in-progress-text);
+    background-color: var(--color-in-progress-bg);
+}
+
+.statusPrototype {
+    color: var(--color-prototype-text);
+    background-color: var(--color-prototype-bg);
+}
+
+.iconContainer {
+    display: flex;
+    font-size: var(--font-size-md);
+    gap: var(--space-sm);
+    align-items: center;
+    justify-content: center;
+}
+
+.icon {
+    width: var(--space-xl);
+    height: var(--space-xl);
+    padding: var(--space-md);
+    background-color: var(--color-text-primary);
+    mask-image: var(--icon-url);
+    mask-size: var(--space-xl) var(--space-xl);
+    mask-repeat: no-repeat;
+
+    -webkit-mask-image: var(--icon-url);
+    -webkit-mask-size: var(--space-xl) var(--space-xl);
+    -webkit-mask-repeat: no-repeat;
+}
+
+.iconText {
+    margin: 0;
+    line-height: 1;
+    color: var(--color-text-primary);
+    font-size: clamp(var(--font-size-xs), 2vw, var(--font-size-md));
+    white-space: nowrap;
+    flex-wrap: nowrap;
+}
+
+.platformIcon {
+    height: var(--space-xl);
+    width: var(--space-xl);
+}
+
+.reversed {
+    flex-direction: row-reverse;
+}
+
+.separator {
+    composes: separator from '../../../Common/common.module.css';
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .projectContainer {
+        flex-direction: column;
+        gap: var(--space-md);
+    }
+
+    .coverImage {
+        width: 100%;
+    }
+
+    .projectInformation {
+        width: 100%;
+    }
+}
+

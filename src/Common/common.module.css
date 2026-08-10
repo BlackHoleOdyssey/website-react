@@ -16,3 +16,7 @@
 
     transition: color 0.3s ease;
 }
+
+.separator {
+    border: var(--page-separator)
+}

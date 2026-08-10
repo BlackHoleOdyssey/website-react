@@ -1,9 +1,32 @@
 ﻿:root {
+    /* ============================================
+       Backgrounds
+       ============================================ */
     --color-bg-dark: #050505;
+    --color-overlay: rgb(0 0 0 / 0.7);
+    
+    /* ============================================
+       Borders
+       ============================================ */
+    --color-border: #ffffff;
+    --color-border-dark: #2a2a2a;
+
+    /* ============================================
+       Texts
+       ============================================ */
     --color-text-primary: #ffffff;
     --color-text-secondary: #939393;
     --color-text-home-card-description: #ffffff;
-    --color-overlay: rgb(0 0 0 / 0.7);
-    --color-border: #ffffff;
-    --color-border-dark: #2a2a2a;
+
+    /* ============================================
+       Games Status
+       ============================================ */
+    --color-release-text: #4ADE80;
+    --color-release-bg: #064E3B;
+
+    --color-in-progress-text: #FB923C;
+    --color-in-progress-bg: #7C2D12;
+
+    --color-prototype-text: #38BDF8;
+    --color-prototype-bg: #0C4A6E;
 }

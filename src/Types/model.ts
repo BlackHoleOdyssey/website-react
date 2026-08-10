@@ -1,8 +1,13 @@
-﻿export interface HomeCard {
+﻿export interface ProjectData {
     id: number;
     title: string;
-    subtitle: string;
+    status: 'in-progress' | 'released' | 'prototype';
+    description: string;
     coverImage: string;
-    platform?: string;
+    screenshot: string[];
+    genre?: string[];
+    releaseDate?: string;
+    platformBadge?: string;
+    platformLogo?: string;
     link?: string;
 }
